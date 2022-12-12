@@ -10,60 +10,55 @@
 <body>
     <header>
         <h1>O sistema solar</h1>
+        <nav>
+            <a href="#">Página Inicial</a>
+            <a href="#">Planetas</a>
+            <a href="#">Sobre</a>
+        </nav>
     </header>
     <main>
-        <article id="artigo">
-            <h2>O sistema solar</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laborum nihil ut. Vel, necessitatibus? Tempora quis, exercitationem quae eum blanditiis, cupiditate corrupti qui, autem harum amet quasi veniam dolores omnis?
-            </p>
-        </article>
+        <h2>Explore!</h2>
+        <section class="menu-astros">
+            <div class="astro">
+                <img src="imagens/jupter.png" alt="">
+                <h3>Sol</h3>
+            </div>
+            <div class="astro">
+                <img src="imagens/mercurio.png" alt="">
+                <h3>Mercúrio</h3>
+            </div>
+            <div class="astro">
+                <img src="imagens/venus.png" alt="">
+                <h3>Vênus</h3>
+            </div>
+            <div class="astro">
+                <img src="imagens/terra.png" alt="">
+                <h3>Terra</h3>
+            </div>
+            <div class="astro">
+                <img src="imagens/marte.png" alt="">
+                <h3>Marte</h3>
+            </div>
+            <div class="astro">
+                <img src="imagens/jupter.png" alt="">
+                <h3>Júpter</h3>
+            </div>
+            <div class="astro">
+                <img src="imagens/saturno.png" alt="">
+                <h3>Saturno</h3>
+            </div>
+            <div class="astro">
+                <img src="imagens/urano.png" alt="">
+                <h3>Urano</h3>
+            </div>
+            <div class="astro">
+                <img src="imagens/netuno.png" alt="">
+                <h3>Netuno</h3>
+            </div>
+        </section>
     </main>
-    <nav>
-        <!--imagens temporárias-->
-        <img src="imagens/sol-p.png" alt="sol" onclick="solArt()">
-        <img src="imagens/mercurio.png" alt="mercúrio" onclick="mercArt()">
-        <img src="imagens/venus.png" alt="vênus" onclick="venArt()">
-        <img src="imagens/terra.png" alt="terra" onclick="terArt()">
-        <img src="imagens/marte.png" alt="marte" onclick="marArt()">
-        <img src="imagens/jupter.png" alt="jupter" onclick="jupArt()">
-        <img src="imagens/saturno.png" alt="saturno" onclick="satArt()">
-        <img src="imagens/urano.png" alt="urano" onclick="uraArt()">
-        <img src="imagens/netuno.png" alt="netuno" onclick="netArt()">
-    </nav>
     <footer>
-        <p>Desenvolvido por Bruno S.T. Hofman</p>
+        Por Bruno Hofman
     </footer>
-
-    <script>
-        var artic = window.document.getElementById('artigo')
-        function solArt(){
-            artic.innerHTML = '<h2>Sol</h2> <p></p>'
-        }
-        function mercArt(){
-            artic.innerHTML = '<h2>Mercúrio</h2> <p></p>'
-        }
-        function venArt(){
-            artic.innerHTML = '<h2>Vênus</h2> <p></p>'
-        }
-        function terArt(){
-            artic.innerHTML = '<h2>Terra</h2> <p></p>'
-        }
-        function marArt(){
-            artic.innerHTML = '<h2>Marte</h2> <p></p>'
-        }
-        function jupArt(){
-            artic.innerHTML = '<h2>Júpter</h2> <p></p>'
-        }
-        function satArt(){
-            artic.innerHTML = '<h2>Saturno</h2> <p></p>'
-        }
-        function uraArt(){
-            artic.innerHTML = '<h2>Urano</h2> <p></p>'
-        }
-        function netArt(){
-            artic.innerHTML = '<h2>Netuno</h2> <p></p>'
-        }
-    </script>
 </body>
 </html>
