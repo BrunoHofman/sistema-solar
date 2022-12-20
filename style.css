@@ -6,7 +6,7 @@
 :root{
     /*paleta de cores*/
     --cor1: #0b4165;
-    --cor2: #C0FDFB;
+    --cor2: #56c7db;
     --cor3: #FF8C42;
     --cor4: #A30B37;
 }
@@ -24,14 +24,40 @@ body{
 }
 
 header{
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     display:flex;
     align-items: center;
     justify-content: space-between;
     min-height: 50px;
 }
 
+header > h1{
+    font-family: 'Audiowide', sans-serif;
+    font-size: 2.5em;
+    padding: 5px;
+    color: var(--cor1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.263);
+}
+
+.menu-principal{
+    font-family: 'Orbitron', sans-serif;
+    padding: 5px;
+}
+
+.menu-principal > a{
+    color: var(--cor1);
+    text-decoration: none;
+    padding: 5px;
+}
+
+.menu-principal > a:hover{
+    color: var(--cor3);
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
 main{
+    font-family: 'Orbitron', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,8 +69,7 @@ main{
 }
 
 .menu-astros{
-    /*background-image: linear-gradient(to bottom, var(--cor1), transparent);*/
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     display: flex;
     column-gap: 3px;
     row-gap: 3px;
@@ -57,11 +82,17 @@ main{
 }
 
 .astro{
-    background-color: var(--cor4);
+    font-size: small;
+    background-color: var(--cor1);
     display: flex;
     align-items: center;
     width: 160px;
     height: 60px;
     padding: 5px;
     border-radius: 5px;
+}
+
+.astro:hover{
+    background-color: var(--cor3);
+    transition: 0.5s;
 }
